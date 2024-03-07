@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default function page() {
+export default function page({params}:{
+    params:{postid:string}
+}) {
   return (
-    <div>Post Details</div>
+    <div>Post Details of ID - {params.postid}</div>
   )
 }
